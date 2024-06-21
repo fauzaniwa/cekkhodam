@@ -75,25 +75,34 @@
     <div class="credit">Khodam Created by <a href="https://instagram.com/fauzanaztera_" target="_blank">Iwa</a></div>
     <script>
         // JavaScript di sini
-        const kataKataRandom = [
-            "Manusia Setengah Kecap", "Monyet Seribukaki", "Gerobak Cireng", "Naga Bolong Tujuh", "Kucing Berkacamata", 
-            "Pocong Pelari Malam", "Zombie Penari Salsa", "Bebek Berkumis", "Jerapah Berpita", "Gajah Belalai Kembar", 
-            "Hantu Pisang Goreng", "Sapi Bercahaya", "Ayam Bertelur Emas", "Ikan Terbang Malam", "Ular Bersepatu", 
-            "Kuda Kutu Buku", "Singa Penggulung Tikar", "Harimau Peniup Trompet", "Badak Bercermin", "Buaya Tersenyum", 
-            "Kerbau Penari Balet", "Kelinci Berhidung Mancung", "Burung Penyanyi Rock", "Cacing Penggali Intan", 
-            "Kambing Berotot Besi", "Elang Mata Dua", "Tikus Bersepeda", "Kadal Berbulu", "Biawak Pengecat", 
-            "Tupai Pemanjat Batu", "Burung Berkaki Lima", "Domba Bermahkota", "Merpati Bertopi Koboi", 
-            "Lebah Bermotor", "Laba-laba Penjahit Baju", "Kura-kura Berlari Cepat", "Paus Penggulung Ombak", 
-            "Penguin Pemanah", "Rusa Berbulu Emas", "Singa Laut Pemain Piano", "Hiu Berkumis", "Kelinci Penerbang", 
-            "Kucing Bergitar", "Kambing Penari Hula", "Ayam Bertanduk", "Kuda Berenang", "Bebek Menari Balet", 
-            "Burung Hantu Penari", "Gajah Bersembunyi", "Kura-kura Pelukis", "Serigala Pemain Drum", "Banteng Penari Salsa", 
-            "Babi Terbang", "Kuda Berpesta", "Ayam Berkacamata Hitam", "Burung Berkumis", "Kelelawar Penghitung Bintang", 
-            "Katak Pelari", "Kucing Bersepeda", "Rusa Berkumis", "Kerbau Pelari Marathon", "Bebek Berpita", 
-            "Naga Berpesta", "Harimau Bermain Golf", "Singa Penari Hip-hop", "Buaya Berotot", "Anjing Bersepatu", 
-            "Pinguin Berkacamata", "Sapi Bermain Biola", "Kelinci Berkumis", "Burung Berotot", "Gajah Penerbang", 
-            "Tikus Penari Balet", "Serigala Pengendara Motor", "Kuda Berpakaian Formal", "Bebek Penyanyi Opera", 
-            "Hiu Pemain Gitar", "Kucing Penari Flamenco", "Kura-kura Pemanjat Tebing", "Ayam Bermain Drum"
-        ];
+    const kataKataRandom = [
+        "Manusia Setengah Kecap", "Monyet Seribukaki", "Gerobak Cireng", "Naga Bolong Tujuh", "Kucing Berkacamata",
+        "Pocong Pelari Malam", "Zombie Penari Salsa", "Bebek Berkumis", "Jerapah Berpita", "Gajah Belalai Kembar",
+        "Hantu Pisang Goreng", "Sapi Bercahaya", "Ayam Bertelur Emas", "Ikan Terbang Malam", "Ular Bersepatu",
+        "Kuda Kutu Buku", "Singa Penggulung Tikar", "Harimau Peniup Trompet", "Badak Bercermin", "Buaya Tersenyum",
+        "Kerbau Penari Balet", "Kelinci Berhidung Mancung", "Burung Penyanyi Rock", "Cacing Penggali Intan",
+        "Kambing Berotot Besi", "Elang Mata Dua", "Tikus Bersepeda", "Kadal Berbulu", "Biawak Pengecat",
+        "Tupai Pemanjat Batu", "Burung Berkaki Lima", "Domba Bermahkota", "Merpati Bertopi Koboi",
+        "Lebah Bermotor", "Laba-laba Penjahit Baju", "Kura-kura Berlari Cepat", "Paus Penggulung Ombak",
+        "Penguin Pemanah", "Rusa Berbulu Emas", "Singa Laut Pemain Piano", "Hiu Berkumis", "Kelinci Penerbang",
+        "Kucing Bergitar", "Kambing Penari Hula", "Ayam Bertanduk", "Kuda Berenang", "Bebek Menari Balet",
+        "Burung Hantu Penari", "Gajah Bersembunyi", "Kura-kura Pelukis", "Serigala Pemain Drum", "Banteng Penari Salsa",
+        "Babi Terbang", "Kuda Berpesta", "Ayam Berkacamata Hitam", "Burung Berkumis", "Kelelawar Penghitung Bintang",
+        "Katak Pelari", "Kucing Bersepeda", "Rusa Berkumis", "Kerbau Pelari Marathon", "Bebek Berpita",
+        "Naga Berpesta", "Harimau Bermain Golf", "Singa Penari Hip-hop", "Buaya Berotot", "Anjing Bersepatu",
+        "Pinguin Berkacamata", "Sapi Bermain Biola", "Kelinci Berkumis", "Burung Berotot", "Gajah Penerbang",
+        "Tikus Penari Balet", "Serigala Pengendara Motor", "Kuda Berpakaian Formal", "Bebek Penyanyi Opera",
+        "Hiu Pemain Gitar", "Kucing Penari Flamenco", "Kura-kura Pemanjat Tebing", "Ayam Bermain Drum",
+        "Katak Bertopi Bunga", "Paus Bertato", "Bebek Bersayap Merah", "Kucing Berbaju Renang", "Harimau Berkebaya",
+        "Jerapah Berdiri Tegak", "Singa Laut Berkebun", "Kuda Terbang Berkacamata", "Kanguru Berdasi", "Ular Berbaju Doraemon",
+        "Kerbau Bercanda dengan Kucing", "Burung Rajawali Memeluk Cactus", "Bebek Berkebaya di Pantai", "Katak Melompati Planet",
+        "Badak Berjalan di Lintasan Sepeda", "Cicak Menyelam di Lautan Es", "Kambing Melompati Pelangi", "Ayam Berperahu di Hutan",
+        "Tikus Menyelam di Air Terjun", "Buaya Berkebaya di Kafe", "Kucing Bermain Skateboard", "Penguin Mengecat Gua",
+        "Gajah Berdansa dengan Kumbang", "Kura-kura Berjemur di Gunung Salju", "Singa Bermain Catur dengan Burung", "Hiu Menyapu Lautan",
+        "Bebek Mengendarai Kereta Api", "Elang Menyanyi Opera", "Kelinci Melukis Langit", "Anjing Menari Ballet di Taman",
+        "Harimau Berjemur di Pantai Berpasir", "Burung Hantu Mengayuh Perahu", "Kuda Bermain Skateboard di Mars"
+    ];
+
 
         function cekKhodam() {
             const nama = document.getElementById('nameInput').value;
